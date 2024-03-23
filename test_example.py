@@ -1,4 +1,5 @@
 import unittest
+import math
 
 from example import div, mul
 
@@ -45,3 +46,21 @@ class TestMul(unittest.TestCase):
         c = mul(a, b)
 
         self.assertEqual(c, 0)
+    
+    def test_b_equals_to_0(self):
+        a = 10
+        b = 0
+
+        c = mul(a, b)
+
+        self.assertEqual(c, 0)
+
+    def test_floating_point_numbers(self):
+        a = 0.1
+        b = 3
+
+        c = mul(a, b)
+
+        self.assertAlmostEqual(c, 0.3, 7)
+
+
