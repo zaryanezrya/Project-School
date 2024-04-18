@@ -1,6 +1,6 @@
 import unittest
 
-from se import solve_square_equation
+from src.se import solve_square_equation
 
 
 class TestSE(unittest.TestCase):

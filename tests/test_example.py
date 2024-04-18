@@ -1,7 +1,7 @@
 import unittest
 import math
 
-from example import div, mul
+from src.example import div, mul
 
 
 class TestDiv(unittest.TestCase):
